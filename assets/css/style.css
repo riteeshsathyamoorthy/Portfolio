@@ -12654,9 +12654,10 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  /* font-size: calc(40px + (120 - 40) * ((100vw - 500px) / (1600 - 500))); */
+  font-size: 5rem;
   font-weight: bold;
-  line-height: .7;
+  /* line-height: .7; */
   margin-bottom: 25px;
   color: inherit;
 }
@@ -12852,6 +12853,25 @@ pre .code {
 .margin-top {
   margin-top: 10px;
 }
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.padding-zero {
+  padding: 0px !important;
+}
+
+.margin-zero {
+  margin: 0px !important;
+}
+
+.padding-top-bottom {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+
 
 .height-100-percentage {
   height: 100%;
