@@ -12671,8 +12671,12 @@ pre .code {
 
 @media (max-width: 767.98px) {
   .header {
-    height: 500px;
+    height: 100vh;
     min-height: 500px;
+  }
+
+  .header .header-content .header-title {
+    font-size: calc(40px + (120 - 40) * ((100vw - 500px) / (1600 - 500)));
   }
 
   .header .social-icons {
