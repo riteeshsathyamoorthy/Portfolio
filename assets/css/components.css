@@ -1,0 +1,389 @@
+.components-page-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-y: scroll;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../imgs/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.components-page-header {
+  position: sticky;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.components-page-header-title {
+  font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 500;
+}
+
+.components-page-footer {
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+  font-size: 80%;
+  color: #6c757d;
+  background-color: #1a263b;
+  padding: 1rem;
+  text-align: center;
+}
+
+.components-page-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  border-radius: 10px;
+}
+.component-title {
+  padding: 6px 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.components-group-wise-container {
+  position: relative;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(97, 97, 97, 0.349);
+  backdrop-filter: blur(10px);
+  max-width: 40%;
+}
+.component {
+  width: fit-content;
+  height: fit-content;
+}
+
+/* component 1 */
+
+.component-1-item {
+  background-color: white;
+  border-radius: 10px;
+}
+.component-1-avatar-div {
+  height: 50px;
+  width: 50px;
+  background-color: #c1c1c2;
+  border-radius: 100%;
+  animation: component-1-animation 4s 1s forwards ease-in-out infinite;
+}
+.component-1-circle-div {
+  height: 18px;
+  width: 25px;
+  background-color: #c1c1c2;
+  border-radius: 10px;
+  animation: component-1-animation 4s 1s forwards ease-in-out infinite;
+}
+.component-1-rectangle-1-div {
+  width: 129px;
+  height: 18px;
+  background-color: #c1c1c2;
+  animation: component-1-animation 4s 1s forwards ease-in-out infinite;
+
+  border-radius: 10px;
+}
+.component-1-rectangle-2-div {
+  width: 160px;
+  height: 18px;
+  background-color: #c1c1c2;
+  border-radius: 10px;
+  animation: component-1-animation 4s 1s forwards ease-in-out infinite;
+}
+
+@keyframes component-1-animation {
+  0% {
+    background-color: rgb(218, 217, 217);
+  }
+
+  12.5% {
+    background-color: rgb(138, 138, 138);
+  }
+  25% {
+    background-color: lightgray;
+  }
+
+  37.5% {
+    background-color: rgb(204, 204, 204);
+  }
+
+  50% {
+    background-color: rgb(126, 126, 126);
+  }
+  62.5% {
+    background-color: lightgray;
+  }
+
+  75% {
+    background-color: rgb(216, 216, 216);
+  }
+  87.5% {
+    background-color: rgb(143, 143, 143);
+  }
+  100% {
+    background-color: lightgray;
+  }
+}
+/* component 2 */
+.component-2-item {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222;
+}
+.component-2-text {
+  text-align: center;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.6s;
+}
+.component-2-icon-div {
+  width: 40px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 10px 0px;
+  transform: translateX(0);
+  border-left: 1px solid black;
+  transition: all 0.6s;
+}
+
+.component-2-item:hover .component-2-text {
+  color: transparent;
+  font-size: 6px;
+  width: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.component-2-item:hover .component-2-icon-div {
+  transform: translateX(50px);
+  font-size: 22px;
+  font-weight: 800;
+  border-left: none;
+  transition: all 0.6s;
+}
+
+/* component 3 */
+.component-3-item {
+  background-color: white;
+  border-radius: 3px;
+  height: 50px;
+}
+.component-3-bar-1 {
+  width: 40px;
+  height: 3px;
+  min-height: 3px;
+
+  background-color: black;
+  border-radius: 2px;
+}
+.component-3-bar-2 {
+  width: 40px;
+  height: 3px;
+  min-height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 1s;
+}
+.component-3-bar-3 {
+  width: 40px;
+  height: 3px;
+  min-height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+.component-3-item:hover {
+  justify-content: center;
+  gap: 0;
+  transition: all 1s;
+}
+
+.component-3-item:hover .component-3-bar-1 {
+  width: 35px;
+  transform: rotate(45deg);
+  transition: all 1s;
+}
+.component-3-item:hover .component-3-bar-2 {
+  display: none;
+  background-color: transparent;
+}
+.component-3-item:hover .component-3-bar-3 {
+  position: absolute;
+  width: 35px;
+  transform: rotate(-45deg);
+  transition: all 1s;
+}
+/* component 4 */
+.component-4-item {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+}
+
+.component-4-main-circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  box-shadow: 0px 6px 8px #1a263b;
+  background-color: #1a263b;
+}
+.component-4-circle-1 {
+  height: 2px;
+  width: 2px;
+  border-radius: 100%;
+  background-color: rgb(64, 41, 196);
+  position: absolute;
+  right: 80%;
+  bottom: 0;
+  animation: component-4-animation 4s infinite ease-in;
+  animation-delay: 2;
+  box-shadow: 0px 6px 8px #1a263b;
+}
+.component-4-circle-2 {
+  height: 2px;
+  width: 2px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: component-4-animation 4s infinite ease-in;
+  box-shadow: 0px 6px 8px #1a263b;
+}
+.component-4-circle-3 {
+  height: 2px;
+  width: 2px;
+  border-radius: 100%;
+  background-color: rgb(235, 50, 50);
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+  animation: component-4-animation 4s infinite ease-in;
+  animation-delay: 2;
+  box-shadow: 0px 6px 8px #1a263b;
+}
+.component-4-circle-4 {
+  height: 2px;
+  width: 2px;
+  border-radius: 100%;
+  background-color: rgb(46, 124, 52);
+  position: absolute;
+  right: 40%;
+  bottom: 0;
+  animation: component-4-animation 4s infinite ease-in;
+  animation-delay: -2;
+  box-shadow: 0px 6px 8px #1a263b;
+}
+
+@keyframes component-4-animation {
+  0% {
+    top: 87.5%;
+    width: 2px;
+    height: 2px;
+  }
+  12.5% {
+    top: 75%;
+    width: 4px;
+    height: 4px;
+  }
+  25% {
+    top: 62.5%;
+    width: 10px;
+    height: 10px;
+  }
+  37.5% {
+    top: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  50% {
+    top: 37.5%;
+    width: 10px;
+    height: 10px;
+  }
+  62.5% {
+    top: 25%;
+    width: 4px;
+    height: 4px;
+  }
+  75% {
+    top: 12.5%;
+    width: 3px;
+    height: 3px;
+  }
+  87.5% {
+    top: 0%;
+    width: 4px;
+    height: 4px;
+  }
+}
+
+/* Common css class */
+.display-flex {
+  display: flex;
+}
+.display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-justify-SE {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.flex-gap-normal {
+  gap: 6px !important;
+}
+.margin-bottom-normal {
+  margin-bottom: 6px !important;
+}
+.padding-normal {
+  padding: 6px !important;
+}
+.padding-large {
+  padding: 10px !important;
+}
+.font-color-white {
+  color: white !important;
+}
